@@ -32,21 +32,21 @@
                         <div class="container pt-5">
                                 <div class="px-4">
                                         <div class="row gx-3">
-                                                <div class="col-lg-4">
+                                                <div class="col-lg-4 pt-3">
                                                         <div
                                                                 class="p-3 border rounded-3 bg-success text-white text-center">
                                                                 <h4>ডিপোজিট</h4>
                                                                 <h1>$<span id="main-deposit">00</span> </h1>
                                                         </div>
                                                 </div>
-                                                <div class="col-lg-4">
+                                                <div class="col-lg-4 pt-3">
                                                         <div
                                                                 class="p-3 border rounded-3 bg-danger text-white text-center">
                                                                 <h4>খরচ</h4>
                                                                 <h1>$<span id="main-withdraw">00</span> </h1>
                                                         </div>
                                                 </div>
-                                                <div class="col-lg-4">
+                                                <div class="col-lg-4 pt-3">
                                                         <div
                                                                 class="p-3 border rounded-3 bg-warning text-dark text-center">
                                                                 <h4>বর্তমান</h4>
@@ -65,35 +65,40 @@
                                                 <div class="col-lg-2">
 
                                                 </div>
-                                                <div class="col-lg-4">
+                                                <div class="col-lg-4 pt-3">
                                                         <div class="p-3 deposit-bg rounded-3">
                                                                 <div class="w-75">
                                                                         <h4>ডিপোজিট করে ফেলো</h4>
-                                                                        <input type="number" class="form-control"
+                                                                        <input type="number" class="form-control mb-2"
                                                                                 id="deposit-input"
                                                                                 placeholder="$তুমার ইচ্ছেমত যোগ করো">
+                                                                        <h5></h5>
                                                                         <button id="deposit-btn"
-                                                                                class="btn btn-success fw-bold mt-2"
+                                                                                class="btn btn-success fw-bold"
                                                                                 type="button" disabled="disabled"> <i
                                                                                         class="fas fa-plus-square"></i>
                                                                                 Deposit</button>
                                                                 </div>
                                                         </div>
                                                 </div>
-                                                <div class="col-lg-4">
+                                                <div class="col-lg-4 pt-3">
                                                         <div class="p-3 withdraw-bg rounded-3">
                                                                 <div class="w-75">
                                                                         <h4>খরচ করে ফেলো</h4>
-                                                                        <input type="number" class="form-control"
+                                                                        <input type="number" class="form-control mb-2"
                                                                                 id="withdraw-input"
                                                                                 placeholder="$তুমার ইচ্ছে মতো খরচ করো">
+                                                                        <h6 class="text-danger" id="exceed-amount"></h6>
                                                                         <button id="withdraw-btn"
-                                                                                class="btn btn-danger fw-bold mt-2"
+                                                                                class="btn btn-danger fw-bold"
                                                                                 type="button" disabled="disabled"> <i
                                                                                         class="fas fa-plus-square"></i>
                                                                                 Withdraw</button>
                                                                 </div>
                                                         </div>
+                                                </div>
+                                                <div class="col-lg-2 pt-3">
+
                                                 </div>
                                         </div>
                                 </div>

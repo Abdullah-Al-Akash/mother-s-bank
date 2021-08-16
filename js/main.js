@@ -9,7 +9,7 @@ document.getElementById('login-btn').addEventListener('click', function () {
         console.log(password);
 
         //Password Validation and Login:
-        if (emailId == 'abc@gmail.com' && password == 'abc') {
+        if (emailId == 'abc@gmail.com' && password == '123') {
                 window.location.href = 'banking.html';
         }
         else {
