@@ -21,7 +21,7 @@
                 <div class="text-center mt-5">
                         <h1 class="text-success fw-bolder">মায়ের ব্যাংক</h1>
                         <h2 class="text-danger fw-bolder">থেকে খরচ করো</h2>
-                        <button type="button" class="btn btn-danger fw-bolder">
+                        <button id="logout" type="button" class="btn btn-danger fw-bolder">
                                 <i class="fas fa-sign-out-alt"></i> লগ আউট
                         </button>
                 </div>
@@ -36,21 +36,21 @@
                                                         <div
                                                                 class="p-3 border rounded-3 bg-success text-white text-center">
                                                                 <h4>ডিপোজিট</h4>
-                                                                <h1>$<span>00</span> </h1>
+                                                                <h1>$<span id="main-deposit">00</span> </h1>
                                                         </div>
                                                 </div>
                                                 <div class="col-lg-4">
                                                         <div
                                                                 class="p-3 border rounded-3 bg-danger text-white text-center">
                                                                 <h4>খরচ</h4>
-                                                                <h1>$<span>00</span> </h1>
+                                                                <h1>$<span id="main-withdraw">00</span> </h1>
                                                         </div>
                                                 </div>
                                                 <div class="col-lg-4">
                                                         <div
                                                                 class="p-3 border rounded-3 bg-warning text-dark text-center">
                                                                 <h4>বর্তমান</h4>
-                                                                <h1>$<span>00</span> </h1>
+                                                                <h1>$<span id="total-balance">1240</span> </h1>
                                                         </div>
                                                 </div>
                                         </div>
@@ -70,10 +70,11 @@
                                                                 <div class="w-75">
                                                                         <h4>ডিপোজিট করে ফেলো</h4>
                                                                         <input type="number" class="form-control"
-                                                                                id="deposit-input">
+                                                                                id="deposit-input"
+                                                                                placeholder="$তুমার ইচ্ছেমত যোগ করো">
                                                                         <button id="deposit-btn"
                                                                                 class="btn btn-success fw-bold mt-2"
-                                                                                type="button"><i
+                                                                                type="button" disabled="disabled"> <i
                                                                                         class="fas fa-plus-square"></i>
                                                                                 Deposit</button>
                                                                 </div>
@@ -82,12 +83,13 @@
                                                 <div class="col-lg-4">
                                                         <div class="p-3 withdraw-bg rounded-3">
                                                                 <div class="w-75">
-                                                                        <h4>ডিপোজিট করে ফেলো</h4>
+                                                                        <h4>খরচ করে ফেলো</h4>
                                                                         <input type="number" class="form-control"
-                                                                                id="deposit-input">
-                                                                        <button id="deposit-btn"
+                                                                                id="withdraw-input"
+                                                                                placeholder="$তুমার ইচ্ছে মতো খরচ করো">
+                                                                        <button id="withdraw-btn"
                                                                                 class="btn btn-danger fw-bold mt-2"
-                                                                                type="button"><i
+                                                                                type="button"> <i
                                                                                         class="fas fa-plus-square"></i>
                                                                                 Withdraw</button>
                                                                 </div>
