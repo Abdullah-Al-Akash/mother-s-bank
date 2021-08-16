@@ -16,6 +16,24 @@ document.getElementById('deposit-input').addEventListener('change', function (e)
         }
 })
 
+document.getElementById('withdraw-input').addEventListener('keyup', function (e) {
+        if (e.target.value > 0) {
+                document.getElementById('withdraw-btn').removeAttribute('disabled');
+        }
+        else {
+                document.getElementById('withdraw-btn').setAttribute('disabled', true);
+        }
+})
+document.getElementById('withdraw-input').addEventListener('change', function (e) {
+        if (e.target.value > 0) {
+                document.getElementById('withdraw-btn').removeAttribute('disabled');
+        }
+        else {
+                document.getElementById('withdraw-btn').setAttribute('disabled', true);
+        }
+})
+
+//End Deposit and Withdraw Button Validity:
 
 //Deposit Balance Setup:
 document.getElementById('deposit-btn').addEventListener('click', function () {
@@ -23,9 +41,6 @@ document.getElementById('deposit-btn').addEventListener('click', function () {
         const deposit = document.getElementById('deposit-input');
         const depositText = deposit.value;
         const depositAmount = parseFloat(depositText);
-
-        //Button Attribute Format:
-
 
         //Set Amount in Deposit Box
         const mainDeposit = document.getElementById('main-deposit');
@@ -64,6 +79,8 @@ document.getElementById('withdraw-btn').addEventListener('click', function () {
 
         //Clear Withdraw Input:
         withdraw.value = '';
+
+        document.getElementById('withdraw-btn').setAttribute('disabled', true);
 })
 
 //Logout Section:
