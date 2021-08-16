@@ -35,6 +35,8 @@ document.getElementById('withdraw-input').addEventListener('change', function (e
 
 //End Deposit and Withdraw Button Validity:
 
+//Common Function:
+
 //Deposit Balance Setup:
 document.getElementById('deposit-btn').addEventListener('click', function () {
         //Get Amount Input
