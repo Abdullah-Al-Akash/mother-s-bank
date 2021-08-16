@@ -45,6 +45,9 @@ function totalBalance(amount, isAdd) {
         else {
                 totalBalance.innerText = totalBalanceAmount - amount;
         }
+        if (totalBalance.innerText > 1250) {
+                alert("এখন মুড়ি খাও");
+        }
 }
 
 //Deposit Balance Setup:
