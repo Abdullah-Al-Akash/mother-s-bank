@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Banking</title>
+        <!-- Bootstrap Link -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+                integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+                crossorigin="anonymous">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="style.css">
+        <!-- Fontawesome Lin -->
+        <script src="https://kit.fontawesome.com/783f1de6e0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+        <header>
+                <div class="text-center mt-5">
+                        <h1 class="text-success fw-bolder">মায়ের ব্যাংক</h1>
+                        <h2 class="text-danger fw-bolder">থেকে খরচ করো</h2>
+                        <button type="button" class="btn btn-danger fw-bolder">
+                                <i class="fas fa-sign-out-alt"></i> লগ আউট
+                        </button>
+                </div>
+        </header>
+
+        <main>
+                <section>
+                        <div class="container pt-5">
+                                <div class="px-4">
+                                        <div class="row gx-3">
+                                                <div class="col-lg-4">
+                                                        <div
+                                                                class="p-3 border rounded-3 bg-success text-white text-center">
+                                                                <h4>ডিপোজিট</h4>
+                                                                <h1>$<span>00</span> </h1>
+                                                        </div>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                        <div
+                                                                class="p-3 border rounded-3 bg-danger text-white text-center">
+                                                                <h4>খরচ</h4>
+                                                                <h1>$<span>00</span> </h1>
+                                                        </div>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                        <div
+                                                                class="p-3 border rounded-3 bg-warning text-dark text-center">
+                                                                <h4>বর্তমান</h4>
+                                                                <h1>$<span>00</span> </h1>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </section>
+
+                <section>
+                        <div class="container pt-5">
+                                <div class="px-4">
+                                        <div class="row gx-5">
+                                                <div class="col-lg-2">
+
+                                                </div>
+                                                <div class="col-lg-4">
+                                                        <div class="p-3 deposit-bg rounded-3">
+                                                                <div class="w-75">
+                                                                        <h4>ডিপোজিট করে ফেলো</h4>
+                                                                        <input type="number" class="form-control"
+                                                                                id="deposit-input">
+                                                                        <button id="deposit-btn"
+                                                                                class="btn btn-success fw-bold mt-2"
+                                                                                type="button"><i
+                                                                                        class="fas fa-plus-square"></i>
+                                                                                Deposit</button>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                        <div class="p-3 withdraw-bg rounded-3">
+                                                                <div class="w-75">
+                                                                        <h4>ডিপোজিট করে ফেলো</h4>
+                                                                        <input type="number" class="form-control"
+                                                                                id="deposit-input">
+                                                                        <button id="deposit-btn"
+                                                                                class="btn btn-danger fw-bold mt-2"
+                                                                                type="button"><i
+                                                                                        class="fas fa-plus-square"></i>
+                                                                                Withdraw</button>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </section>
+        </main>
+
+        <!-- Bootstrap Bundle -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                crossorigin="anonymous"></script>
+        <!-- Js Link -->
+        <script src="js/banking.js"></script>
+</body>
+
+</html>
